@@ -163,7 +163,7 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory.
 
 ```env
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ---
