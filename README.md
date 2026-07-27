@@ -21,14 +21,14 @@ DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistan
 
 ## Frontend
 
-- HTML5
-- CSS3
-- JavaScript
+- Next.js
+- TypeScript
+- Tailwind CSS
 
 ## Backend
 
-- Python
 - FastAPI
+- LangChain
 
 ## AI & RAG
 
@@ -63,10 +63,7 @@ DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistan
 
 The landing page where users can upload PDF documents and connect with the Gemini API.
 
-
-```md
 ![Home Interface](assets/home.png)
-```
 
 ---
 
@@ -74,10 +71,7 @@ The landing page where users can upload PDF documents and connect with the Gemin
 
 After uploading a PDF, the application processes the document and opens an interactive chat interface. The uploaded document appears in the sidebar under the document library, allowing users to manage and query the selected file.
 
-
-```md
 ![Chat Interface](assets/chat.png)
-```
 
 ---
 
