@@ -44,16 +44,32 @@ DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistan
 
 ---
 
-# ⚙️ How It Works
+## 🔄 RAG Workflow
 
-1. Upload a PDF document.
-2. Extract text from the uploaded PDF.
-3. Split the text into smaller chunks.
-4. Generate semantic embeddings.
-5. Store embeddings in the local FAISS vector database.
-6. Ask questions in natural language.
-7. Retrieve the most relevant chunks.
-8. Gemini AI generates answers based on the retrieved context.
+```text
+Document Upload
+        │
+        ▼
+Text Extraction
+        │
+        ▼
+Text Chunking
+        │
+        ▼
+Gemini Embeddings
+        │
+        ▼
+Supabase Vector Database
+        │
+        ▼
+User Question
+        │
+        ▼
+tRelevant Contex
+        │
+        ▼
+LLM Response
+```
 
 ---
 
