@@ -65,7 +65,7 @@ Supabase Vector Database
 User Question
         │
         ▼
-tRelevant Contex
+Relevant Context
         │
         ▼
 LLM Response
