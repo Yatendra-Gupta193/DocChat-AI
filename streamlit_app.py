@@ -4,9 +4,15 @@ import math
 import fitz  # PyMuPDF
 import google.generativeai as genai
 from typing import List, Dict, Any
+from dotenv import load_dotenv
 
 # 1. Page Configuration
 st.set_page_config(page_title="DocAssist - Chat with PDF", page_icon="📄", layout="wide")
+load_dotenv()
+# st.write(os.getenv("GEMINI_API_KEY"))
+
+# print("DEBUG API:", os.getenv("GEMINI_API_KEY"))
+# st.write("DEBUG API:", os.getenv("GEMINI_API_KEY"))
 
 # Custom CSS for Premium Dark theme with Library Sidebar & Chat Window
 st.markdown("""
@@ -105,10 +111,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 2. Setup Gemini API Key
-api_key = ""
-if "GEMINI_API_KEY" in st.secrets:
-    api_key = st.secrets["GEMINI_API_KEY"]
-elif "gemini_api_key" in st.session_state:
+api_key = os.getenv("GEMINI_API_KEY")
+# Try Streamlit secrets if .env is not available
+if not api_key:
+    try:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        api_key = ""
+
+# Try session state if still not available
+if not api_key and "gemini_api_key" in st.session_state:
     api_key = st.session_state["gemini_api_key"]
 
 # Sidebar configuration (Admin Dashboard)
