@@ -4,6 +4,10 @@ DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistan
 
 ---
 
+# 🌐 Live Application:  https://docchat-ai-icebbmofawrsvffhvd7tbv.streamlit.app/
+
+---
+
 # 🚀 Features
 
 - 📄 Upload PDF documents
@@ -47,10 +51,10 @@ DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistan
 ## 🔄 RAG Workflow
 
 ```text
-Document Upload
+Upload Document
         │
         ▼
-Text Extraction
+Extract Text
         │
         ▼
 Text Chunking
@@ -65,10 +69,16 @@ Supabase Vector Database
 User Question
         │
         ▼
+Similarity Search
+        │
+        ▼
 Relevant Context
         │
         ▼
-LLM Response
+Gemini LLM
+        │
+        ▼
+Response Answer
 ```
 
 ---
