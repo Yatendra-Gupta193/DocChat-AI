@@ -1,4 +1,4 @@
-# 📄 DocAssist AI   
+# 📄 DocAssist AI    
 
 DocAssist AI is a RAG (Retrieval-Augmented Generation) powered document assistant that enables users to upload PDF documents and ask questions about their content using Google's Gemini AI. The application extracts document text, creates semantic embeddings, and retrieves the most relevant information to generate accurate, context-aware responses.
  
